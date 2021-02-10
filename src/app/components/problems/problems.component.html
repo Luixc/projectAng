@@ -1,0 +1,38 @@
+<div class="main-container">
+    <div class="title">Problemas</div>
+    <div class="hr"></div>
+    <div class="option-container">
+        <div class="menuOption" (click)="cambio('introduccion')">
+            <div class="text">introduccion</div>
+        </div>
+        <div class="menuOption" (click)="cambio('matematicas')">
+            <div class="text">matematicas</div>
+        </div>
+        <div class="menuOption" (click)="cambio('grafos')">
+            <div class="text">grafos</div>
+        </div>
+        <div class="menuOption" (click)="cambio('otros')">
+            <div class="text">otros</div>
+        </div>
+    </div>
+</div>
+
+<div class="opTions">
+    <app-introduccion *ngIf="_service.optionproblems == 'introduccion'"> </app-introduccion>
+    <app-matematicas *ngIf="_service.optionproblems == 'matematicas'"> </app-matematicas>
+    <app-grafos *ngIf="_service.optionproblems == 'grafos'"> </app-grafos>
+    <app-otros *ngIf="_service.optionproblems == 'otros'"> </app-otros>
+</div>
+
+
+
+
+
+
+<!-- <div class="menu-option-container" *ngFor="let menuOption of menuOptions">
+        <div class="menu-option" [ngClass]="{'selected': menuOption == actualOption}" (click)="setOption(menuOption)">
+
+
+            <div class="text">{{menuOption.text}}</div>
+        </div>
+    </div> -->

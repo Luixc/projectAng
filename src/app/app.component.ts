@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavigationService } from './services/navigation.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'compilador';
+  constructor(public service: NavigationService){
+
+  }
+  get _service(){
+    return this.service;
+  }
 }
