@@ -15,6 +15,11 @@ import { RankingComponent } from './components/ranking/ranking.component';
 import { MatSliderModule } from '@angular/material/slider';
 import {MatTableModule} from '@angular/material/table';
 import { TableproblemsComponent } from './components/problems/tableproblems/tableproblems.component';
+import { LoginComponent } from './components/user/login/login.component';
+import { UserComponent } from './components/user/user.component';
+import { FormsModule } from "@angular/forms"
+import { HttpClientModule } from '@angular/common/http';
+
 // import { CardComponent } from './components/problems/card/card.component';
 
 @NgModule({
@@ -22,19 +27,23 @@ import { TableproblemsComponent } from './components/problems/tableproblems/tabl
     AppComponent,
     NavbarComponent,
     ProblemsComponent,
+    LoginComponent,
     IntroductionComponent,
     IntroduccionComponent,
     MatematicasComponent,
     GrafosComponent,
     OtrosComponent,
     RankingComponent,
-    TableproblemsComponent
+    TableproblemsComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
     MatCardModule,
     MatSliderModule,
     MatTableModule,
+    HttpClientModule ,
+    FormsModule,
     BrowserAnimationsModule
   ],
   providers: [],

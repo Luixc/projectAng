@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GrafosComponent } from './grafos.component';
+import { LoginComponent } from './login.component';
 
-describe('GrafosComponent', () => {
-  let component: GrafosComponent;
-  let fixture: ComponentFixture<GrafosComponent>;
+describe('LoginComponent', () => {
+  let component: LoginComponent;
+  let fixture: ComponentFixture<LoginComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GrafosComponent ]
+      declarations: [ LoginComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GrafosComponent);
+    fixture = TestBed.createComponent(LoginComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

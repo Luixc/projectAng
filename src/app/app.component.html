@@ -1,4 +1,6 @@
 <app-navbar></app-navbar>
+<app-user *ngIf="_service.actualOption == 'user'"></app-user>
+<app-login *ngIf="_service.actualOption == 'login'"></app-login>
 <app-problems *ngIf="_service.actualOption == 'problems'"></app-problems>
 <app-ranking *ngIf="_service.actualOption == 'ranking'"></app-ranking>
 <app-introduction *ngIf="_service.actualOption == 'introduction'"></app-introduction>
